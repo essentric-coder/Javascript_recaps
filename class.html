@@ -1,0 +1,23 @@
+<script>
+    // dealing with classes the ES6 ways
+    class human{
+       
+        gender = 'male';
+       
+        printGender = ()=>{
+            console.log(gender);
+        }
+    }
+    class Person extends human{
+         name ='max';
+         //overide the value if gener
+         gender = 'female'
+        }
+        printmyName = ()=> {
+            console.log(name);
+        }
+    }
+    const person = new Person();
+    person.printmyName();
+    person.printGender();
+</script>
